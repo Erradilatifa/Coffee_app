@@ -1,0 +1,37 @@
+﻿# Flutter
+.flutter/
+flutter_export_environment.sh
+
+# Android
+android/app/debug/
+android/app/profile/
+android/app/release/
+
+# iOS
+ios/Flutter/flutter_export_environment.sh
+
+# Build
+build/
+*.apk
+*.aab
+*.ipa
+
+# Environnement
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Cache
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+pubspec.lock
