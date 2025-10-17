@@ -73,3 +73,15 @@ Coffee_app/
 └── 📄 README.md              # Cette documentation
 ```
 
+## 🎯 Screenshots
+
+<img width="1907" height="987" alt="Immagine 2025-10-17 113807" src="https://github.com/user-attachments/assets/04754b29-9d97-4dd6-a450-2651a91b1562" />
+
+### 🎨 Design Responsive
+
+<img width="670" height="883" alt="Immagine 2025-10-17 113857" src="https://github.com/user-attachments/assets/daed56b0-131c-448e-82f9-ea6ef7c9ecd2" />
+
+<div align="center">
+  Fait avec ❤️ et beaucoup de ☕
+</div>
+
