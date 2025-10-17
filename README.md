@@ -1,242 +1,69 @@
 # ☕ Coffee App
 
-Une application moderne de café développée avec Flutter, offrant une expérience utilisateur exceptionnelle pour commander et découvrir vos boissons préférées.
+Une application Flutter élégante pour gérer vos préférences de café.
 
-## 📋 Table des matières
+## 🚀 Démarrage Rapide
 
-- [Aperçu](#aperçu)
-- [Fonctionnalités](#fonctionnalités)
-- [Prérequis](#prérequis)
-- [Installation](#installation)
-- [Utilisation](#utilisation)
-- [Tests](#tests)
-- [Structure du projet](#structure-du-projet)
-- [Contribution](#contribution)
-- [Licence](#licence)
+### Prérequis
 
-## 🎯 Aperçu
+- **Flutter** 3.35.6+
+- **Dart** 3.9.2+
+- **Device/Émulateur** (Android, iOS, Web, Windows)
 
-Coffee App est une application mobile qui permet aux utilisateurs de parcourir, personnaliser et commander leurs boissons au café préférées. Conçue avec Flutter pour une expérience cross-platform fluide.
-
-## ✨ Fonctionnalités
-
-- 📱 Interface utilisateur intuitive et moderne
-- ☕ Catalogue complet de boissons
-- 🛒 Système de panier d'achat
-- 🎨 Personnalisation des commandes
-- 💳 Intégration de paiement
-- 📍 Localisation des cafés
-- ⭐ Système de favoris
-- 🔔 Notifications push
-
-## 🔧 Prérequis
-
-Avant de commencer, assurez-vous d'avoir installé les éléments suivants :
-
-### Langages et outils requis
-
-- **Langage de programmation** : Dart/Flutter
-- **Gestionnaires de paquets** : 
-  - Pub (Flutter package manager)
-  - Gradle (pour Android)
-  - CMake (pour builds natifs)
-
-### Environnement de développement
+### Installation
 
 ```bash
-# Vérifiez votre installation Flutter
-flutter doctor
-
-# Vérifiez la version de Dart
-dart --version
-```
-
-## 📦 Installation
-
-### 1️⃣ Cloner le dépôt
-
-```bash
-git clone https://github.com/Erradilatifa/Coffee_app
-```
-
-### 2️⃣ Naviguer vers le répertoire du projet
-
-```bash
+git clone https://github.com/Erradilatifa/Coffee_app.git
 cd Coffee_app
-```
-
-### 3️⃣ Installer les dépendances
-
-Choisissez la méthode correspondant à votre configuration :
-
-#### Option A : Utiliser Pub (Flutter - Recommandé)
-
-```bash
 flutter pub get
 ```
 
-ou
-
-```bash
-pub get
+### Lancement
 ```
-
-#### Option B : Utiliser Gradle (Android)
-
-```bash
-gradle build
-```
-
-#### Option C : Utiliser CMake (Builds natifs)
-
-```bash
-cmake . && make
-```
-
-## 🚀 Utilisation
-
-### Lancer l'application
-
-Selon votre configuration, utilisez l'une des commandes suivantes :
-
-#### Avec Flutter (Recommandé)
-
-```bash
 flutter run
 ```
+### 📱 Fonctionnalités
+✅ Ajustement force du café
 
-#### Avec Pub/Dart
+✅ Contrôle quantité de sucre
 
-```bash
-dart run
-# ou spécifiez le point d'entrée
-dart lib/main.dart
+✅ Interface intuitive
+
+✅ Multi-plateforme
+
+
+### 🧪 Tests
 ```
-
-#### Avec Gradle
-
-```bash
-gradle run
-```
-
-#### Avec CMake
-
-```bash
-cmake . && make
-./Coffee_app
-```
-
-### Configuration
-
-Créez un fichier `.env` à la racine du projet pour vos variables d'environnement :
-
-```env
-API_URL=https://api.coffeeapp.com
-API_KEY=votre_clé_api
-PAYMENT_KEY=votre_clé_paiement
-```
-
-## 🧪 Tests
-
-Coffee App utilise le framework de test intégré de Flutter pour garantir la qualité du code.
-
-### Exécuter tous les tests
-
-#### Avec Flutter (Recommandé)
-
-```bash
 flutter test
-```
-
-#### Avec Pub
-
-```bash
-pub run test
-```
-
-#### Avec Gradle
-
-```bash
-gradle test
-```
-
-#### Avec CMake
-
-```bash
-cmake . && make test
-```
-
-### Exécuter des tests spécifiques
-
-```bash
-flutter test test/widget_test.dart
-```
-
-### Tests avec couverture
-
-```bash
-flutter test --coverage
-```
-
-## 📁 Structure du projet
 
 ```
+
+### 🏗️ Structure du Projet
 Coffee_app/
-├── lib/
-│   ├── main.dart                 # Point d'entrée de l'application
-│   ├── models/                   # Modèles de données
-│   ├── screens/                  # Écrans de l'application
-│   ├── widgets/                  # Widgets réutilisables
-│   ├── services/                 # Services (API, authentification)
-│   ├── utils/                    # Utilitaires et helpers
-│   └── theme/                    # Configuration du thème
-├── test/                         # Tests unitaires et widgets
-├── assets/                       # Images, fonts, etc.
-├── android/                      # Configuration Android
-├── ios/                          # Configuration iOS
-├── pubspec.yaml                  # Dépendances Flutter
-└── README.md                     # Ce fichier
-```
+├── 📁 android/                 # Configuration Android
+├── 📁 assets/                  
+│   └── 📁 img/
+│       ├── 🖼️ coffee_bean.png  # Icône grain de café
+│       ├── 🖼️ coffee_bg.jpg   # Image de fond
+│       └── 🖼️ sugar_cube.png  # Icône cube de sucre
+├── 📁 build/                  # Dossiers de build (ignorés par Git)
+├── 📁 ios/                    # Configuration iOS
+├── 📁 lib/                    # CODE SOURCE PRINCIPAL
+│   ├── 🎯 main.dart           # Point d'entrée de l'application
+│   ├── 🎯 home.dart           # Page d'accueil
+│   ├── ☕ coffee_prefs.dart   # Widget préférences café
+│   ├── 🎨 styled_body_text.dart # Texte stylisé
+│   └── 🎨 styled_button.dart  # Bouton stylisé
+├── 📁 linux/                  # Configuration Linux
+├── 📁 macos/                  # Configuration macOS  
+├── 📁 test/                   # Tests unitaires
+├── 📁 web/                    # Configuration Web
+├── 📁 windows/                # Configuration Windows
+│   └── 📁 flutter/
+│       └── 📁 runner/
+├── 📄 .gitignore             # Fichiers ignorés par Git
+├── 📄 CMakeLists.txt         # Configuration CMake (Windows)
+├── 📄 .metadata              # Métadonnées Flutter
+├── 📄 pubspec.yaml           # Dépendances et configuration
+└── 📄 README.md              # Cette documentation
 
-## 🤝 Contribution
-
-Les contributions sont les bienvenues ! Voici comment vous pouvez contribuer :
-
-1. **Fork** le projet
-2. **Créez** votre branche de fonctionnalité (`git checkout -b feature/AmazingFeature`)
-3. **Committez** vos changements (`git commit -m 'Add some AmazingFeature'`)
-4. **Poussez** vers la branche (`git push origin feature/AmazingFeature`)
-5. **Ouvrez** une Pull Request
-
-### Guidelines de contribution
-
-- Suivez les conventions de code Dart/Flutter
-- Ajoutez des tests pour les nouvelles fonctionnalités
-- Mettez à jour la documentation si nécessaire
-- Assurez-vous que tous les tests passent
-
-## 📝 Changelog
-
-Consultez le fichier [CHANGELOG.md](CHANGELOG.md) pour voir l'historique des modifications.
-
-## 🐛 Signaler un bug
-
-Si vous trouvez un bug, veuillez [ouvrir une issue](https://github.com/Erradilatifa/Coffee_app/issues) avec :
-- Une description claire du problème
-- Les étapes pour reproduire
-- Le comportement attendu vs le comportement actuel
-- Des captures d'écran si pertinent
-- Votre environnement (OS, version Flutter, etc.)
-
-## 📄 Licence
-
-Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
-
-## 👥 Auteurs
-
-- **Erradi Latifa** - [Erradilatifa](https://github.com/Erradilatifa)
-
-
-<div align="center">
-  Fait avec ❤️ et beaucoup de ☕
-</div>
