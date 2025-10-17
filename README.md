@@ -39,6 +39,8 @@ flutter test
 ```
 
 ### 🏗️ Structure du Projet
+
+
 Coffee_app/
 ├── android/                 # Configuration Android
 ├── assets/                  
@@ -46,10 +48,10 @@ Coffee_app/
 │       ├── coffee_bean.png  # Icône grain de café
 │       ├── coffee_bg.jpg    # Image de fond
 │       └── sugar_cube.png   # Icône cube de sucre
-├── build/                   # Dossiers de build (ignorés par Git)
+├── build/                   # Dossiers de build
 ├── ios/                     # Configuration iOS
 ├── lib/                     # CODE SOURCE PRINCIPAL
-│   ├── main.dart            # Point d'entrée de l'application
+│   ├── main.dart            # Point d'entrée
 │   ├── home.dart            # Page d'accueil
 │   ├── coffee_prefs.dart    # Widget préférences café
 │   ├── styled_body_text.dart # Texte stylisé
@@ -59,11 +61,10 @@ Coffee_app/
 ├── test/                    # Tests unitaires
 ├── web/                     # Configuration Web
 ├── windows/                 # Configuration Windows
-│   └── flutter/
-│       └── runner/
 ├── .gitignore              # Fichiers ignorés par Git
-├── CMakeLists.txt          # Configuration CMake (Windows)
+├── CMakeLists.txt          # Configuration CMake
 ├── .metadata               # Métadonnées Flutter
 ├── pubspec.yaml            # Dépendances et configuration
 └── README.md               # Cette documentation
+
 
